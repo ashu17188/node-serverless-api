@@ -1,0 +1,14 @@
+org: ashu17188
+app: node-serverless-api
+service: node-serverless-api
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  api:
+    handler: handler.handler
+    events:
+      - httpApi: '*'
